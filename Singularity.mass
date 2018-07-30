@@ -20,7 +20,7 @@ From: jtchilders/singularity_mpi_test_recipe:latest
    python get-pip.py
    echo find me
    echo $PWD
-   cd usr/bin/python2.7/
+   cd usr/bin/python2/
    ls
    #pip install mpi4py
    cd ..
