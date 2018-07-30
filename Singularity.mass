@@ -15,4 +15,4 @@ From: jtchilders/singularity_mpi_test_recipe:latest
    #install python to the container
    ./configure
 
-   python hello.py
+   python create_files.py
