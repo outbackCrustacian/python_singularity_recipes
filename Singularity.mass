@@ -16,9 +16,11 @@ From: jtchilders/singularity_mpi_test_recipe:latest
    ./configure
 
    #install pip and then mpi4py
-   yum install python-pip
+   curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
+   python get-pip.py
    cd Scripts/
    pip install mpi4py
    cd ..
 
+   #move into files directory and create files
    python create_files.py
