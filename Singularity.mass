@@ -20,9 +20,10 @@ From: jtchilders/singularity_mpi_test_recipe:latest
    python get-pip.py
    echo find me
    echo $PWD
-   cd usr/bin/python2/
+   cd usr/bin/
    ls
-   #pip install mpi4py
+   brew install mpich
+   pip install mpi4py
    cd ..
    cd ..
 
