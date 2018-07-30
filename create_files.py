@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-from mpi4py import MPI
+#from mpi4py import MPI
 import os
 
 global jack
