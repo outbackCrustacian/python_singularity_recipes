@@ -16,7 +16,7 @@ From: jtchilders/singularity_mpi_test_recipe:latest
    ./configure
 
    #install pip and then mpi4py
-   yum install python-pip
+   yum -y install python-pip
    cd Scripts/
    pip install mpi4py
    cd ..
