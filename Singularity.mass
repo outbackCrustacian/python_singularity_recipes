@@ -29,3 +29,4 @@ From: jtchilders/singularity_mpi_test_recipe:latest
    #move into files directory and create files
    #need to figgure out how to execute python from a different directory
    python create_files.py
+   ls
