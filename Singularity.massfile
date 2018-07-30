@@ -5,6 +5,7 @@ From: jtchilders/singularity_mpi_test_recipe:latest
    #make directory for files to be created to
    mkdir ${SINGULARITY_ROOTFS}/files
    cp hello.py ${SINGULARITY_ROOTFS}/
+   cp create_files.py ${SINGULARITY_ROOTFS}/
 
 %post
    yum install -y wget
@@ -13,8 +14,3 @@ From: jtchilders/singularity_mpi_test_recipe:latest
 
    #install python to the container
    ./configure
-   make
-   make test
-   sudo make install
-
-   python hello.py
