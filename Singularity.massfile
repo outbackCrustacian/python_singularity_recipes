@@ -16,13 +16,13 @@ From: jtchilders/singularity_mpi_test_recipe:latest
    ./configure
 
    #install pip and then mpi4py
-   #curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
-   #python get-pip.py
-   #cd usr/bin/
-   #ls
-   #pip install mpi4py
-   #cd ..
-   #cd ..
+   curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
+   python get-pip.py
+   cd usr/bin/
+   pip wheel mpi4py
+   pip install mpi4py
+   cd ..
+   cd ..
 
    #move into files directory and create files
    #need to figgure out how to execute python from a different directory
