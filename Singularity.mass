@@ -19,11 +19,9 @@ From: jtchilders/singularity_mpi_test_recipe:latest
    curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
    python get-pip.py
    echo find me
-   echo $PWD
    cd usr/bin/
    ls
-   brew install mpich
-   pip install mpi4py
+   #pip install mpi4py
    cd ..
    cd ..
 

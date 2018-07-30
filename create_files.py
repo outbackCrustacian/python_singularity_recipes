@@ -31,9 +31,9 @@ def main():
     make_file()
 
 def make_file():
-    for i in range(1000000):
-        comm = MPI.COMM_WORLD
-        rank = comm.Get_rank()
+    for rank in range(1000000):
+        #comm = MPI.COMM_WORLD
+        #rank = comm.Get_rank()
         name = "file_%05d.txt" % rank
         os.system(jack + ' > ' + name)
 
