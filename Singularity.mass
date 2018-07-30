@@ -16,10 +16,9 @@ From: jtchilders/singularity_mpi_test_recipe:latest
    ./configure
 
    #install pip and then mpi4py
-   yum --enablerepo=extras install epel-release
-   yum -y install python-pip
+   #yum -y install python-pip
    cd Scripts/
-   pip install mpi4py
+   yum -y install mpi4py
    cd ..
 
    python create_files.py
