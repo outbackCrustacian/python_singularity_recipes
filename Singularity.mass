@@ -15,4 +15,10 @@ From: jtchilders/singularity_mpi_test_recipe:latest
    #install python to the container
    ./configure
 
+   #install pip and then mpi4py
+   apt-get install python-pip
+   cd Scripts/
+   pip install mpi4py
+   cd ..
+
    python create_files.py
