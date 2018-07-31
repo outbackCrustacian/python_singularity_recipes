@@ -17,12 +17,12 @@ From: outbackCrustacian/python_singularity_recipes:python
    #python3 get-pip.py
    cd sslin
    #install openssl
-   wget -q https://www.openssl.org/source/openssl-1.1.1-pre8.tar.gz
-   tar xf openssl-1.1.1-pre8.tar.gz --strip-components=1
-   ./config
-   make
-   make install
-   cd ..
+   #wget -q https://www.openssl.org/source/openssl-1.1.1-pre8.tar.gz
+   #tar xf openssl-1.1.1-pre8.tar.gz --strip-components=1
+   #./config
+   #make
+   #make install
+   #cd ..
 
    ls
    cd usr/bin/
@@ -30,6 +30,7 @@ From: outbackCrustacian/python_singularity_recipes:python
    ls
 
    pip3 install --upgrade pip3
+   pip3 install ssl
    pip3 install mpi4py
    cd
 
