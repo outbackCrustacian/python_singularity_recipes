@@ -7,6 +7,7 @@ From: outbackCrustacian/python_singularity_recipes:python
    cp create_files.py ${SINGULARITY_ROOTFS}/
 
 %post
+   #test python3
    python3 hello.py
    #install pip and then mpi4py
    curl https://bootstrap.pypa.io/get-pip.py | python
