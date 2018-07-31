@@ -9,12 +9,12 @@ From: outbackCrustacian/python_singularity_recipes:python
 %post
    #install pip and then mpi4py
    curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
-   python get-pip.py
+   python3 get-pip.py
    cd usr/bin/
    pip install mpi4py
    cd ..
    cd ..
 
    #move into files directory and create files
-   python create_files.py
+   python3 create_files.py
    ls
