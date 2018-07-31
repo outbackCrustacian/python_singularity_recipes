@@ -9,11 +9,15 @@ From: alpine
 
    apk update
    apk add --no-cache python3
-   ls
    python3 hello.py
 
    #install pip
    curl https://bootstrap.pypa.io/get-pip.py | python3
+   ls
 
-   cd bin/
+   #install mpi4py
+   pip install mpi4py
+
+   echo SPLIT
+   cd usr/
    ls
