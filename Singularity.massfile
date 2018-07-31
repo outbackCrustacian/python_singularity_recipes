@@ -18,9 +18,17 @@ From: outbackCrustacian/python_singularity_recipes:python
    cd usr/bin/
    echo SWITCHING NOW
    ls
+
+   #install openssl
+   wget -q https://www.openssl.org/source/openssl-1.1.1-pre8.tar.gz
+   tar xf openssl-1.1.1-pre8.tar.gz --strip-components=1
+   ./config
+   make
+   make install
+
+   pip install --upgrade pip
    pip3 install mpi4py
-   cd ..
-   cd ..
+   cd
 
    #move into files directory and create files
    python3 create_files.py
