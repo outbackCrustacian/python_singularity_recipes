@@ -4,9 +4,19 @@ From: outbackCrustacian/python_singularity_recipes:python
 %setup
    #make directory for files to be created to
    mkdir ${SINGULARITY_ROOTFS}/files
+   mkdir ${SINGULARITY_ROOTFS}/openssl
    cp create_files.py ${SINGULARITY_ROOTFS}/
 
 %post
+   #install openssl
+   cd openssl/
+   wget -q http://www.openssl.org/source/openssl-1.0.1g.tar.gz
+   tar xf openssl-1.0.1g.tar.gz --strip-components=1
+   ./config --prefix=/usr/local/openssl --openssldir=/usr/local/openssl
+   make
+   make install
+   cd ..
+
    #install pip and then mpi4py
    curl https://bootstrap.pypa.io/get-pip.py | python
    #curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
