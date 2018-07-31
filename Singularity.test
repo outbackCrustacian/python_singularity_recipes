@@ -6,4 +6,4 @@ From: jtchilders/singularity_mpi_test_recipe:latest
 
 %post
    ls
-   python hello.py
+   python3 hello.py
