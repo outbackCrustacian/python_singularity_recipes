@@ -20,14 +20,14 @@ From: outbackCrustacian/python_singularity_recipes:python
    wget -q https://www.openssl.org/source/openssl-1.1.1-pre8.tar.gz
    tar xf openssl-1.1.1-pre8.tar.gz --strip-components=1
    ./config
+   make
+   make install
    cd ..
 
    ls
    cd usr/bin/
    echo SWITCHING NOW
    ls
-   make
-   make install
 
    pip3 install --upgrade pip3
    pip3 install mpi4py
