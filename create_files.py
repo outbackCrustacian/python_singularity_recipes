@@ -34,8 +34,9 @@ def make_file():
     for r in range(1000):
         comm = MPI.COMM_WORLD
         rank = comm.Get_rank()
-        name = "file_%05d.txt" % rank
-        os.system(jack + ' > ' + name)
+        if(r == rank):
+            name = "file_%05d.txt" % rank
+            os.system(jack + ' > ' + name)
 
 
 if __name__ == "__main__":
