@@ -11,7 +11,9 @@ From: alpine
    apk add --no-cache python3
    ls
    python3 hello.py
-   #install python to the container
-   ./configure
-   make
-   make install
+
+   #install pip
+   curl https://bootstrap.pypa.io/get-pip.py | python
+
+   cd bin/
+   ls
