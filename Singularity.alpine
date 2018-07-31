@@ -6,6 +6,9 @@ From: alpine
 
 %post
    ls
+   apk update
+   apk add ca-certificates wget
+   update-ca-certificates
    yum install -y wget
    yum install -y zlib-devel
    yum install -y libffi-devel
