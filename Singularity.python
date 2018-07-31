@@ -16,4 +16,6 @@ From: jtchilders/singularity_mpi_test_recipe:latest
    make
    make install
 
-   python hello.py
+   ls
+
+   python3 hello.py
