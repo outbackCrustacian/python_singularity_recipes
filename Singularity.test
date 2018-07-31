@@ -1,0 +1,8 @@
+Bootstrap: shub
+From: jtchilders/singularity_mpi_test_recipe:latest
+
+%setup
+   cp hello.py ${SINGULARITY_ROOTFS}/
+
+%post
+   python hello.py
