@@ -14,12 +14,14 @@ From: jtchilders/singularity_mpi_test_recipe:latest
 
    #install python to the container
    ./configure
+   make
+   make install
 
    #install pip and then mpi4py
    curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
    python get-pip.py
    cd usr/bin/
-   sudo pip install mpi4py
+   pip install mpi4py
    cd ..
    cd ..
 
