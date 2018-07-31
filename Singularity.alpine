@@ -17,7 +17,7 @@ From: alpine
    ls
 
    #install mpi4py
-   pip3 install mpi4py
+   pip3.6 install mpi4py
 
    echo SPLIT
    ls
