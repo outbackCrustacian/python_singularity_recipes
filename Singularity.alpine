@@ -5,7 +5,8 @@ From: alpine
    cp hello.py ${SINGULARITY_ROOTFS}/
 
 %post
-   sudo apt-get update
-   sudo apt-get install python3.6
+   ls
+   apt-get update
+   apt-get install python3.6
    python hello.py
    ls
