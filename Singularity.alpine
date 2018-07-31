@@ -13,7 +13,7 @@ From: alpine
    python3 hello.py
 
    #install pip
-   curl https://bootstrap.pypa.io/get-pip.py | python
+   curl https://bootstrap.pypa.io/get-pip.py | python3
 
    cd bin/
    ls
