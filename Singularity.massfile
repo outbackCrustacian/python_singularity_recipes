@@ -30,7 +30,7 @@ From: outbackCrustacian/python_singularity_recipes:python
    ls
 
    #pip3 install ssl
-   pip3 install mpi4py
+   env MPICC=/mpich/install/bin/mpicc pip3 install mpi4py
    cd
 
    #create 1million 1kb files
