@@ -1,23 +1,12 @@
 Bootstrap: shub
-From: jtchilders/singularity_mpi_test_recipe:latest
+From: outbackCrustacian/python_singularity_recipes:python
 
 %setup
    #make directory for files to be created to
    mkdir ${SINGULARITY_ROOTFS}/files
-   cp hello.py ${SINGULARITY_ROOTFS}/
    cp create_files.py ${SINGULARITY_ROOTFS}/
 
 %post
-   yum install -y wget
-   yum install -y zlib
-   wget -q https://www.python.org/ftp/python/3.7.0/Python-3.7.0.tar.xz
-   tar xf Python-3.7.0.tar.xz --strip-components=1
-
-   #install python to the container
-   ./configure
-   make
-   make install
-
    #install pip and then mpi4py
    curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
    python get-pip.py
