@@ -28,7 +28,6 @@ From: outbackCrustacian/python_singularity_recipes:python
    echo SWITCHING NOW
    ls
 
-   pip3 install --upgrade pip3
    pip3 install ssl
    pip3 install mpi4py
    cd
