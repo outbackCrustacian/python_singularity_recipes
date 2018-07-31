@@ -18,7 +18,7 @@ From: outbackCrustacian/python_singularity_recipes:python
    cd usr/bin/
    echo SWITCHING NOW
    ls
-   pip install mpi4py
+   pip3 install mpi4py
    cd ..
    cd ..
 
