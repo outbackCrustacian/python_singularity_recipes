@@ -21,5 +21,5 @@ From: outbackCrustacian/python_singularity_recipes:python
    cd /
 
    #create 1k 1kb files
-   mpiexec -np 1000 python3 create_files.py
+   /mpich/install/bin/mpiexec -np 1000 python3 create_files.py
    ls
