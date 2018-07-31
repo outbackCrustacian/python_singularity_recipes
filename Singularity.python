@@ -8,7 +8,7 @@ From: jtchilders/singularity_mpi_test_recipe:latest
    yum install -y wget
    yum install -y zlib-devel
    yum install -y libffi-devel
-   yum install openssl-devel
+   yum install -y openssl-devel
    wget -q https://www.python.org/ftp/python/3.7.0/Python-3.7.0.tar.xz
    tar xf Python-3.7.0.tar.xz --strip-components=1
 
