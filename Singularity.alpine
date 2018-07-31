@@ -6,7 +6,14 @@ From: alpine
 
 %post
    ls
-   apt-get update
-   apt-get install python3.6
-   python hello.py
+   yum install -y wget
+   yum install -y zlib-devel
+   yum install -y libffi-devel
+   wget -q https://www.python.org/ftp/python/3.7.0/Python-3.7.0.tar.xz
+   tar xf Python-3.7.0.tar.xz --strip-components=1
+
+   #install python to the container
+   ./configure
+   make
+   make install
    ls
