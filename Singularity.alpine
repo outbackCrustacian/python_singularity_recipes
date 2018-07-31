@@ -19,5 +19,5 @@ From: alpine
    #pip install mpi4py
 
    echo SPLIT
-   cd usr/
+   cd usr/bin/
    ls
