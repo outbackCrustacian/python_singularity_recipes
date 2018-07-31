@@ -13,6 +13,7 @@ From: outbackCrustacian/python_singularity_recipes:python
    #python3 get-pip.py
    ls
    cd usr/bin/
+   echo SWITCHING NOW
    ls
    pip install mpi4py
    cd ..
