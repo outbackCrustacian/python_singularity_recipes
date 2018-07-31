@@ -8,7 +8,7 @@ From: alpine
    ls
 
    apk update
-   apk add install python3.6
+   apk add --no-cache python3.6
 
    #install python to the container
    ./configure
