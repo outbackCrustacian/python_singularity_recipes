@@ -15,7 +15,7 @@ From: outbackCrustacian/python_singularity_recipes:python
    curl https://bootstrap.pypa.io/get-pip.py | python
    #curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
    #python3 get-pip.py
-   cd sslin
+   #cd sslin
    #install openssl
    #wget -q https://www.openssl.org/source/openssl-1.1.1-pre8.tar.gz
    #tar xf openssl-1.1.1-pre8.tar.gz --strip-components=1
