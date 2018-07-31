@@ -36,6 +36,7 @@ def make_file():
         rank = comm.Get_rank()
         if(r == rank):
             name = "file_%05d.txt" % rank
+            print(name)
             os.system(jack + ' > ' + name)
 
 
