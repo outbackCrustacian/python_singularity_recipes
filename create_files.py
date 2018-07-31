@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#from mpi4py import MPI
+from mpi4py import MPI
 import os
 
 global jack
@@ -31,9 +31,9 @@ def main():
     make_file()
 
 def make_file():
-    for rank in range(1000):
-        #comm = MPI.COMM_WORLD
-        #rank = comm.Get_rank()
+    for r in range(1000):
+        comm = MPI.COMM_WORLD
+        rank = comm.Get_rank()
         name = "file_%05d.txt" % rank
         os.system(jack + ' > ' + name)
 
