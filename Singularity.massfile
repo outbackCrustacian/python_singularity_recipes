@@ -4,25 +4,12 @@ From: outbackCrustacian/python_singularity_recipes:python
 %setup
    #make directory for files to be created to
    mkdir ${SINGULARITY_ROOTFS}/files
-   mkdir ${SINGULARITY_ROOTFS}/sslin
    cp create_files.py ${SINGULARITY_ROOTFS}/
 
 %post
-   find / -name mpi.h
-   #test python3
    python3 hello.py
-   echo $PATH
-   #install pip and then mpi4py
+   #install pip
    curl https://bootstrap.pypa.io/get-pip.py | python
-   #curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
-   #python3 get-pip.py
-   #cd sslin
-   #wget -q https://www.openssl.org/source/openssl-1.1.1-pre8.tar.gz
-   #tar xf openssl-1.1.1-pre8.tar.gz --strip-components=1
-   #./config
-   #make
-   #make install
-   #cd ..
 
    ls
    cd usr/bin/
@@ -33,6 +20,7 @@ From: outbackCrustacian/python_singularity_recipes:python
    env MPICC=/mpich/install/bin/mpicc pip3 install mpi4py
    cd /
 
-   #create 1million 1kb files
+   #create 1k 1kb files
+   #get out of pending
    python3 create_files.py
    ls
