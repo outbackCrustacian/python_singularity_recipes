@@ -1,0 +1,9 @@
+Bootstrap: docker
+From: alpine
+
+%setup
+   cp hello.py ${SINGULARITY_ROOTFS}/
+
+%post
+   python hello.py
+   ls
