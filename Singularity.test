@@ -5,4 +5,5 @@ From: jtchilders/singularity_mpi_test_recipe:latest
    cp hello.py ${SINGULARITY_ROOTFS}/
 
 %post
+   ls
    python hello.py
