@@ -15,6 +15,8 @@ From: outbackCrustacian/python_singularity_recipes:python
 
    find / -name libmpi.so.12
    python3 hello.py
+
+
    #install pip
    curl https://bootstrap.pypa.io/get-pip.py | python
 
@@ -26,6 +28,7 @@ From: outbackCrustacian/python_singularity_recipes:python
    ls -lR /mpich/install
 
    #pip3 install mpi4py
+   #run please
    env MPICC=/mpich/install/bin/mpicc pip3 install mpi4py
    cd /
 
