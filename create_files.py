@@ -31,7 +31,7 @@ def main():
     make_file()
 
 def make_file():
-    for r in range(1000):
+    for r in range(100):
         comm = MPI.COMM_WORLD
         rank = comm.Get_rank()
         if(r == rank):
