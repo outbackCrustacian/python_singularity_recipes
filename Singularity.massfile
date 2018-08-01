@@ -5,6 +5,8 @@ From: outbackCrustacian/python_singularity_recipes:python
    #make directory for files to be created to
    mkdir ${SINGULARITY_ROOTFS}/files
    cp create_files.py ${SINGULARITY_ROOTFS}/
+   #coppy time test into the root directory for use
+   #to run do aprun -n 1 -N 1 singularity run python3 /time_test.py
    cp time_test.py ${SINGULARITY_ROOTFS}/
 
 %post
