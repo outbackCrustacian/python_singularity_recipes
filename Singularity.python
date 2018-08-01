@@ -18,6 +18,7 @@ From: jtchilders/singularity_mpi_test_recipe:latest
    make install
 
    #Set correct path for mpich
+   #Stop pending
    export PATH=$PATH:/mpich/install/lib
    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/mpich/install/lib
    env | sort
