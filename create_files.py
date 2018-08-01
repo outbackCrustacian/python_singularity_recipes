@@ -3,29 +3,7 @@ from mpi4py import MPI
 import os
 
 global jack
-jack = """All work and no play makes Jack a dull boy
-All work and no play makes Jack a dull boy
-All work and no play makes Jack a dull boy
-All work and no play makes Jack a dull boy
-All work and no play makes Jack a dull boy
-All work and no play makes Jack a dull boy
-All work and no play makes Jack a dull boy
-All work and no play makes Jack a dull boy
-All work and no play makes Jack a dull boy
-All work and no play makes Jack a dull boy
-All work and no play makes Jack a dull boy
-All work and no play makes Jack a dull boy
-All work and no play makes Jack a dull boy
-All work and no play makes Jack a dull boy
-All work and no play makes Jack a dull boy
-All work and no play makes Jack a dull boy
-All work and no play makes Jack a dull boy
-All work and no play makes Jack a dull boy
-All work and no play makes Jack a dull boy
-All work and no play makes Jack a dull boy
-All work and no play makes Jack a dull boy
-All work and no play makes Jack a dull boy
-All work and no play makes Jac"""
+jack = "All work and no play makes Jack a dull boy/nAll work and no play makes Jack a dull boy/nAll work and no play makes Jack a dull boy/nAll work and no play makes Jack a dull boy/nAll work and no play makes Jack a dull boy/nAll work and no play makes Jack a dull boy/nAll work and no play makes Jack a dull boy/nAll work and no play makes Jack a dull boy/nAll work and no play makes Jack a dull boy/nAll work and no play makes Jack a dull boy/nAll work and no play makes Jack a dull boy/nAll work and no play makes Jack a dull boy/nAll work and no play makes Jack a dull boy/nAll work and no play makes Jack a dull boy/nAll work and no play makes Jack a dull boy/nAll work and no play makes Jack a dull boy/nAll work and no play makes Jack a dull boy/nAll work and no play makes Jack a dull boy/nAll work and no play makes Jack a dull boy/nAll work and no play makes Jack a dull boy/nAll work and no play makes Jack a dull boy/nAll work and no play makes Jack a dull boy/nAll work and no play ma"
 
 def main():
     make_file()
