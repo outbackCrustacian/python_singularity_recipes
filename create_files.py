@@ -12,8 +12,11 @@ def main():
 
 def make_file():
     comm = MPI.COMM_WORLD
+    print("COMMMM")
     rank = comm.Get_rank()
-    name = "file_%05d.txt" % rank
+    print("rank")
+    name = 'file_' + str(rank) + '.txt'
+    print(name)
     os.system('echo ' + jack + ' > ' + name)
 
 
