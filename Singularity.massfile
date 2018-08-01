@@ -25,13 +25,13 @@ From: outbackCrustacian/python_singularity_recipes:python
    echo SWITCHING NOW
    ls
 
-   ls -lR /mpich/install
-
    #pip3 install mpi4py
    env MPICC=/mpich/install/bin/mpicc pip3 install mpi4py
    cd /
 
    #create 1k 1kb files
    ulimit -n 2048
+   cd /files/
    /mpich/install/bin/mpiexec -np 100 python3 create_files.py
+   cd ..
    ls
