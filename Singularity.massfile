@@ -34,6 +34,6 @@ From: outbackCrustacian/python_singularity_recipes:python
    ulimit -n 2048
    cd /files/
    ulimit -n 2048
-   /mpich/install/bin/mpiexec -np 100 /python3 /create_files.py
+   /mpich/install/bin/mpiexec -np 100 python3 /create_files.py
    ls
    cd ..
