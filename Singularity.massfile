@@ -7,6 +7,7 @@ From: outbackCrustacian/python_singularity_recipes:python
    cp create_files.py ${SINGULARITY_ROOTFS}/
 
 %post
+   find / -name libmpi.so.12
    python3 hello.py
    #install pip
    curl https://bootstrap.pypa.io/get-pip.py | python
