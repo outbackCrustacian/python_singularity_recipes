@@ -21,7 +21,6 @@ From: outbackCrustacian/python_singularity_recipes:python
    cd /
 
    #create 1k 1kb files
-   #run again
    ulimit -n 2048
    /mpich/install/bin/mpiexec -np 100 python3 create_files.py
    ls
