@@ -35,5 +35,6 @@ From: outbackCrustacian/python_singularity_recipes:python
    cd /files/
    ulimit -n 2048
    /mpich/install/bin/mpiexec -np 100 python3 /create_files.py
+   python3 /hello.py
    ls
    cd ..
