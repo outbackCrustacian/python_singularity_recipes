@@ -17,6 +17,8 @@ From: outbackCrustacian/python_singularity_recipes:python
    echo SWITCHING NOW
    ls
 
+   ls -lR /mpich/install
+
    #pip3 install mpi4py
    #re run please
    env MPICC=/mpich/install/bin/mpicc pip3 install mpi4py
