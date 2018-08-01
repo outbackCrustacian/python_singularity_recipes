@@ -26,7 +26,6 @@ From: outbackCrustacian/python_singularity_recipes:python
    ls
 
    #pip3 install mpi4py
-   #run
    env MPICC=/mpich/install/bin/mpicc pip3 install mpi4py
    cd /
 
@@ -34,7 +33,7 @@ From: outbackCrustacian/python_singularity_recipes:python
    ulimit -n 2048
    cd /files/
    ulimit -n 2048
-   /mpich/install/bin/mpiexec -np 100 python3 /create_files.py
+   /mpich/install/bin/mpiexec -np 99 python3 /create_files.py
    python3 /hello.py
    ls
    cd ..
