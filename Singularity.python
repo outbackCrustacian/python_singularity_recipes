@@ -9,6 +9,13 @@ From: jtchilders/singularity_mpi_test_recipe:latest
    yum install -y zlib-devel
    yum install -y libffi-devel
    yum install -y openssl-devel
+
+   #Set correct path for mpich
+   #Stop pending
+   export PATH=$PATH:/mpich/install/bin
+   export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/mpich/install/lib
+   env | sort
+
    wget -q https://www.python.org/ftp/python/3.7.0/Python-3.7.0.tar.xz
    tar xf Python-3.7.0.tar.xz --strip-components=1
 
@@ -16,12 +23,6 @@ From: jtchilders/singularity_mpi_test_recipe:latest
    ./configure
    make
    make install
-
-   #Set correct path for mpich
-   #Stop pending
-   export PATH=$PATH:/mpich/install/lib
-   export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/mpich/install/lib
-   env | sort
 
    ls
 
