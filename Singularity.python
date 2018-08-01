@@ -12,6 +12,11 @@ From: jtchilders/singularity_mpi_test_recipe:latest
    wget -q https://www.python.org/ftp/python/3.7.0/Python-3.7.0.tar.xz
    tar xf Python-3.7.0.tar.xz --strip-components=1
 
+   #Set correct path for mpich
+   export PATH=$PATH:/mpich/install/lib
+   export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/mpich/install/lib
+   env | sort
+
    #install python to the container
    ./configure
    make
