@@ -11,6 +11,8 @@ From: outbackCrustacian/python_singularity_recipes:python
 
 %post
    yum install vim-X11 vim-common vim-enhanced vim-minimal
+   y
+   echo y
    #Set correct path for mpich
    #Stop pending
    export PATH=$PATH:/mpich/install/bin
