@@ -39,3 +39,6 @@ From: outbackCrustacian/python_singularity_recipes:python
    /mpich/install/bin/mpiexec -np 99 python3 /create_files.py
    ls
    cd ..
+
+%runscript
+   /time_test.py
