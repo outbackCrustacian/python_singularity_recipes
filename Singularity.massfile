@@ -8,6 +8,7 @@ From: outbackCrustacian/python_singularity_recipes:python
    #coppy time test into the root directory for use
    #to run do aprun -n 1 -N 1 singularity run python3 /time_test.py
    cp time_test.py ${SINGULARITY_ROOTFS}/
+   chmod +x /time_test.py
 
 %post
    yes | yum install vim-X11 vim-common vim-enhanced vim-minimal
