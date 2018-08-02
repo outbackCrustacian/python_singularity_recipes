@@ -10,6 +10,7 @@ From: outbackCrustacian/python_singularity_recipes:python
    cp time_test.py ${SINGULARITY_ROOTFS}/
 
 %post
+   yum install vim-X11 vim-common vim-enhanced vim-minimal
    #Set correct path for mpich
    #Stop pending
    export PATH=$PATH:/mpich/install/bin
