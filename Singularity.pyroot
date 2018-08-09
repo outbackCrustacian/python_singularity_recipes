@@ -8,6 +8,7 @@ From: outbackCrustacian/python_singularity_recipes:python
 %post
    yes | yum install vim-X11 vim-common vim-enhanced vim-minimal
    yum install -y wget
+   yum install -y cmake
 
    cd /rootdir
    wget -q https://root.cern.ch/download/root_v6.14.02.source.tar.gz
