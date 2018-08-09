@@ -17,5 +17,5 @@ From: outbackCrustacian/python_singularity_recipes:python
 
    ls ../
    find / -name CMakeLists.txt
-   cmake ../root
+   cmake ../rootdir
    cmake --build
