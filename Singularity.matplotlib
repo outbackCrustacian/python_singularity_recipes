@@ -5,7 +5,7 @@ From: outbackCrustacian/python_singularity_recipes:python
    cp testplot.py ${SINGULARITY_ROOTFS}/
 
 %post
-   yum install bzip2-devel 
+   yes | yum install bzip2-devel 
    cd /usr/bin/
    pip3 install matplotlib
    pip3 install numpy
