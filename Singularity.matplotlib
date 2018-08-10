@@ -5,6 +5,7 @@ From: outbackCrustacian/python_singularity_recipes:python
    cp testplot.py ${SINGULARITY_ROOTFS}/
 
 %post
+   yes | yum install vim-X11 vim-common vim-enhanced vim-minimal
    cd /usr/bin/
    pip3 install matplotlib
    pip3 install numpy
