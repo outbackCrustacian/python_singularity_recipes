@@ -1,5 +1,2 @@
 Bootstrap: docker
 From: rootproject/root-ubuntu16
-
-%post
-   root
