@@ -1,0 +1,8 @@
+Bootstrap: shub
+From: jtchilders/singularity_mpi_test_recipe:latest
+
+%setup
+
+%post
+   cd /usr/bin/
+   pip install matplotlib
