@@ -2,8 +2,11 @@ Bootstrap: shub
 From: outbackCrustacian/python_singularity_recipes:python
 
 %setup
+   cp testplot.py ${SINGULARITY_ROOTFS}/
 
 %post
    cd /usr/bin/
    pip3 install matplotlib
    pip3 install numpy
+   cd
+   python3 testplot.py
