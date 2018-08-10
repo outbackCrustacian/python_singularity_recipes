@@ -1,8 +1,8 @@
 Bootstrap: shub
-From: jtchilders/singularity_mpi_test_recipe:latest
+From: outbackCrustacian/python_singularity_recipes:python
 
 %setup
 
 %post
    cd /usr/bin/
-   pip install matplotlib
+   pip3 install matplotlib
