@@ -27,3 +27,6 @@ From: jtchilders/singularity_mpi_test_recipe:latest
    ls
 
    python3 hello.py
+
+   #install pip
+   curl https://bootstrap.pypa.io/get-pip.py | python
