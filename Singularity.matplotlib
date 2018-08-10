@@ -8,5 +8,6 @@ From: outbackCrustacian/python_singularity_recipes:python
    cd /usr/bin/
    pip3 install matplotlib
    pip3 install numpy
-   cd
+   cd ..
+   cd ..
    python3 testplot.py
