@@ -10,3 +10,4 @@ From: outbackCrustacian/python_singularity_recipes:python
    pip3 install numpy
    cd ..
    cd ..
+#run
