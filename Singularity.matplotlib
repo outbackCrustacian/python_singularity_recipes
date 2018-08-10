@@ -6,3 +6,4 @@ From: outbackCrustacian/python_singularity_recipes:python
 %post
    cd /usr/bin/
    pip3 install matplotlib
+   pip3 install numpy
