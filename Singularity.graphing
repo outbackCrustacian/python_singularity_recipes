@@ -2,10 +2,12 @@ Bootstrap: shub
 From: outbackCrustacian/python_singularity_recipes:python
 
 %setup
-   cp testplot.py ${SINGULARITY_ROOTFS}/
+   cp graphtest.py ${SINGULARITY_ROOTFS}/
 
 %post
    yes | yum install vim-X11 vim-common vim-enhanced vim-minimal
    cd /usr/bin/
    pip3 install matplotlib
    pip3 install numpy
+
+   python3 graphtest.py
